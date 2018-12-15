@@ -13,4 +13,6 @@ class Task < ApplicationRecord
     def set_nameless_name
         self.name = '名前なし' if name.blank?
     end
+
+    belongs_to :user
 end
